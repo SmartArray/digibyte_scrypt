@@ -1,4 +1,7 @@
+#define PY_SSIZE_T_CLEAN
+
 #include <Python.h>
+#include <stdio.h>
 
 #include "scrypt.h"
 
@@ -23,7 +26,7 @@ static PyObject *scrypt_getpowhash(PyObject *self, PyObject *args)
 
 static PyObject *scrypt_getpowhash(PyObject *self, PyObject *args, PyObject* kwargs) {
     char *input;
-    int      inputlen;
+    Py_ssize_t inputlen;
 
     char *outbuf;
     size_t   outbuflen;
