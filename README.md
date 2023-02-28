@@ -15,6 +15,9 @@ digibyte_scrypt.calcPoW(...)
 ```
 
 ## Changelog
+`1.0.7`
+- Removed obsolete debug log statement
+
 `1.0.6`
 - Added support for Python 3.10: This version defines `#define PY_SSIZE_T_CLEAN` before including `Python.h` 
 

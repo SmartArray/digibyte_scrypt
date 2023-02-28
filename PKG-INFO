@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: digibyte_scrypt
-Version: 1.0.6
+Version: 1.0.7
 Summary: Bindings for scrypt proof of work used by DigiByte
 Home-page: https://pypi.org/project/digibyte_scrypt
 Maintainer: YoshiJaeger
@@ -23,6 +23,9 @@ Description: # DigiByte Scrypt (Python Bindings)
         ```
         
         ## Changelog
+	`1.0.7`
+	- Removed debug log statement
+
 	`1.0.6`
 	- Added support for Python 3.10
 

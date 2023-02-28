@@ -31,7 +31,6 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include <string.h>
-#include <stdio.h>
 
 const int scrypt_scratchpad_size = 131583;
 
@@ -287,7 +286,6 @@ SHA256_Update(SHA256_CTX * ctx, const void *in, size_t len)
 	}
 
 	/* Finish the current block */
-	printf("A=%p B=%p b2=%p C=%d\n", &ctx->buf[r], src, PAD, 64 - r);
 	memcpy(&ctx->buf[r], src, 64 - r);
 	SHA256_Transform(ctx->state, ctx->buf);
 	src += 64 - r;
